@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,4 +16,23 @@
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
        {% endfor %}
+=======
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="">Django Girls Blog</a></h1>
+        </div>
+
+       {% for post in posts %}
+            <div>
+                <p>published: {{ post.published_date }}</p>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+       {% endfor %}
+>>>>>>> 83ff5eb5253636ff90d9d99b246ddd253e566c77
 </html>
