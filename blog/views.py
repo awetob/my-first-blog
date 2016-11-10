@@ -12,8 +12,6 @@ def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'blog/post_detail.html', {'post': post})
 
-<<<<<<< HEAD
-=======
 def post_new(request):
     if request.method == "POST":
         form = PostForm(request.POST)
@@ -41,4 +39,3 @@ def post_edit(request, pk):
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
->>>>>>> a30baa66954fdf6a9ae6fc3fba479fdbd1fcd60e
